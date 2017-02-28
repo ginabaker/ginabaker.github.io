@@ -59,7 +59,7 @@ title: 'Blog'
     </div>
 
     <!-- Articles -->
-    {% for post in paginator.posts %}
+    {% for post in site.posts %}
     {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
     {% if thecycle == 'odd' %}
       <div class="row article-row">
@@ -105,7 +105,7 @@ title: 'Blog'
       {% endif %}
     {% endfor %}
 
-    <!-- Pagination -->
+    <!-- Pagination 
     <div class="row">
       <div class="col-md-12 text-center">
         <div class="pagination">
@@ -121,7 +121,7 @@ title: 'Blog'
             <span class="next ">Next</span>
           {% endif %}
         </div>
-      </div>
+      </div>-->
     </div>
   </div>
 </section>

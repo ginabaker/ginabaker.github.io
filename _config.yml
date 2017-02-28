@@ -1,6 +1,1 @@
 exclude: ['README.md']
-gems: [jekyll-paginate-v2]
-pagination:
-  enabled: true
-  per_page: 5
-  permalink: '/blog/:num/'
