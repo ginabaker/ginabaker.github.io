@@ -1,4 +1,4 @@
-baseurl: ginabaker.github.io
+baseurl: ""
 exclude: ['README.md']
 permalink: pretty
 gems:
