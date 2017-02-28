@@ -1,3 +1,1 @@
-group :jekyll_plugins do
-  gem 'octopress-paginate'
-end
+gem install jekyll-paginate
