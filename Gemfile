@@ -1,1 +1,1 @@
-gem install jekyll-paginate
+gem install jekyll-paginate-v2
