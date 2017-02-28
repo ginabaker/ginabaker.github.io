@@ -1,4 +1,4 @@
 exclude: ['README.md']
 permalink: pretty
 gems:
-  - octopress-paginate
+  - jekyll-paginate
