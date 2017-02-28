@@ -1,0 +1,65 @@
+---
+layout: template
+---
+
+<header class="post-mast" style="background-image: url('{{site.baseurl}}{{ page.featured-image }}')">
+  <div class="container blog-nav nav-padding-top">
+    <div class="pull-right">
+      {% include nav.html %}
+    </div>
+  </div>
+  <div class="container">
+    <div class="vertical-center">
+      <p class="category underline text-center">{{ page.categories }}</p>
+
+      <h1>{{ page.title }}</h1>
+      <h2 class="subtitle text-center">{{ page.subtitle }}</h2>
+
+      <div class="call-to-action text-center">
+        <a href="/blog/" class="btn btn-primary">
+          Back To Blog
+        </a>
+      </div>
+
+    </div>  
+  </div>
+</header>
+
+<article class="container">
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2 post-details">
+      <p>
+        {{ page.author }} <br />
+        on <time>{{ page.date | date: "%B %-d, %Y" }}</time>
+      </p>
+    </div>
+    <div class="col-md-8 col-md-offset-2 post-content">
+      {{ content }}
+    </div>
+  </div>
+</article>
+
+<!-- Next/Prev Post Goes here -->
+
+<script>
+// Replicate jQuery's $(document).ready
+function ready(fn) {
+  if (document.readyState != 'loading'){
+    fn();
+  } else {
+    document.addEventListener('DOMContentLoaded', fn);
+  }
+}
+
+// When DOM is Ready
+ready(function() {
+  // Add Class of "current" to our "Blog" <li> in the navigation
+  const current = document.getElementsByClassName('blog-li');
+
+  // Since we have two (Header/Footer), 
+  // make sure to iterate to get each
+  for(let i = 0; i < current.length; i++) {
+    current[i].classList += " current";
+  }
+});
+</script>

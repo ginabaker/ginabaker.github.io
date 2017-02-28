@@ -1,0 +1,30 @@
+--- 
+layout: blog 
+title: 'Archives'
+---
+
+<div class="container container-padding">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-2">
+      <h2 class="underline">Archives</h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6 col-md-offset-2">
+      {% for category in site.categories %}
+      <h3 id="{{ category | first }}">{{ category | first }}</h3>
+
+      <ul>
+        {% for posts in category %} {% for post in posts %} {% if post.url %}
+        <li>
+          <a href="{{ post.url }}">
+            <em>{{ post.title }}</em> on
+            <time>{{ post.date | date: "%B %-d, %Y" }}</time>
+          </a>
+        </li>
+        {% endif %} {% endfor %} {% endfor %}
+      </ul>
+      {% endfor %}
+    </div>
+  </div>
+</div>

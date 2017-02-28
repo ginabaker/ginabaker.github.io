@@ -1,0 +1,423 @@
+/****************************
+Primary Color: #4C7D5C
+Secondary Color: #85d6a0
+Accent Color: #e9ac00
+Font Color: #333
+****************************/
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Avenir', sans-serif;
+  text-rendering: optimizeLegibility;
+  color: #333;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: #85d6a0;
+}
+
+.container-padding {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.row-padding {
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+h1 {
+  font-family: 'Playfair Display', Georgia, Times, Times New Roman, serif;
+  font-size: 75px;
+  font-weight: 400;
+  letter-spacing: 0.15em;
+  margin-top: 70px;
+}
+
+h2 {
+  font-weight: bold;
+}
+
+p {
+  font-size: 22px;
+}
+
+a,
+a:active,
+a:visited {
+  text-decoration: none;
+  color: #4C7D5C;
+  transition: color 0.2s ease;
+  cursor: pointer;
+}
+
+a:hover {
+  color: #85d6a0;
+  text-decoration: none;
+}
+
+.btn.btn-primary {
+  font-family: 'Avenir', sans-serif;
+  background: transparent;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 18px;
+  padding: 10px 25px;
+  border: 3px white solid;
+  border-radius: 1px;
+  transition: background 0.3s ease, border 0.3s ease;
+}
+
+.btn.btn-primary.btn-green {
+  color: #4C7D5C;
+  border-color: #4C7D5C;
+}
+
+.btn.btn-primary:hover {
+  border-color: #4C7D5C;
+  background: #4C7D5C;
+}
+
+.btn.btn-primary.btn-green:hover {
+  color: #fff;
+}
+
+.underline:after {
+  content: '';
+  display: block;
+  background: #333;
+  height: 3px;
+  max-width: 95px;
+  width: 100%;
+  margin: 15px 0;
+}
+
+.nav-padding-top {
+  padding-top: 50px;
+}
+
+.blog-nav {
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+.blog-nav ul.list-inline li {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.blog-nav ul li a {
+  color: #86a590;
+}
+
+.blog-nav ul li.current a {
+  color: #9cffbd;
+}
+
+/** Home Page **/
+
+
+.tulip-container {
+  margin-top: -170px;
+}
+
+.tulip-container img {
+  width: 650px;
+}
+
+.green,
+.text-primary {
+  color: #4C7D5C;
+}
+
+.text-yellow {
+  color: #e9ac00;
+}
+
+.petals {
+  position: absolute;
+}
+
+.petal-1 {
+  top: 700px;
+  left: 200px;
+}
+
+.petal-1 img {
+  width: 50px;
+  transform: rotate(-48deg);
+}
+
+.petal-2 {
+  top: 700px;
+  left: 700px;
+}
+
+.petal-3 {
+  top: 390px;
+  left: 115px;
+}
+
+.petal-3 img {
+  width: 250px;
+  transform: rotate(-19deg);
+}
+
+.petal-4 {
+  top: 500px;
+  right: 400px;
+}
+
+.petal-4 img {
+  width: 50px;
+  transform: rotate(48deg);
+}
+
+.bio {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.bio-content {
+  position: relative;
+}
+
+.bio-content .desc {
+  position: absolute;
+  width: 60%;
+  background: rgba(198, 220, 198, 0.6);
+  padding: 18px;
+  box-shadow: 0 16px 24px 2px rgba(0,0,0,0.14), 0 6px 30px 5px rgba(0,0,0,0.12), 0 8px 10px -5px rgba(0,0,0,0.3);
+}
+
+.bio .picture {
+  text-align: right;
+}
+
+.bio .picture img {
+  box-shadow: 0 16px 24px 2px rgba(0,0,0,0.14), 0 6px 30px 5px rgba(0,0,0,0.12), 0 8px 10px -5px rgba(0,0,0,0.3);
+}
+
+.bio aside {
+  font-size: 17px;
+}
+
+.picture-frame {
+  width: 400px;
+  height: 300px;
+  border: 4px solid rgba(76, 125, 92, 0.5);
+  margin-top: -205px;
+  margin-left: 185px;
+}
+
+
+/** Blog Page **/
+
+
+.blog-mast {
+  background: url('../images/blog/leaf.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  height: 800px;
+  position: relative;
+}
+
+.blog-mast .category,
+.featured-article .category,
+.post-mast .category {
+  font-family: 'Avenir', sans-serif;
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 1px 1px #333;
+}
+
+.blog-mast .category.underline:after, 
+.featured-article .category.underline:after,
+.post-mast .category.underline:after {
+  background: #fff;
+  height: 2px;
+  max-width: 80px;
+  margin: 16px auto;
+}
+
+.blog-mast h1, 
+.featured-article h1,
+.post-mast h1 {
+  font-size: 72px;
+  color: #fff;
+  margin-top: 35px;
+  text-shadow: 1px 1px #333;
+}
+
+.blog-mast .subtitle, 
+.featured-article .subtitle,
+.post-mast .subtitle {
+  font-family: 'Avenir', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 34px;
+  color: #85d6a0;
+  text-shadow: 1px 1px #333;
+}
+
+.blog-mast .call-to-action, 
+.featured-article .call-to-action,
+.post-mast .call-to-action {
+  margin-top: 5%;
+}
+
+.vertical-center {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/** Blog Page::About **/
+
+
+.about p {
+  font-size: 17px;
+}
+
+
+/** Blog Page:: Featured **/
+
+.featured-article {
+  position: relative;
+  background: url('../images/blog/cow.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  height: 700px;
+}
+
+.articles {
+  padding-bottom: 100px;
+}
+
+article {
+  margin: 25px auto;
+}
+
+article .date {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #777;
+}
+
+article .title {
+  font-size: 24px;
+}
+
+article .categories {
+  margin-bottom: 15px;
+}
+
+article .categories .label-default {
+  background-color: #e9ac00;
+}
+
+.posts .article-row {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.posts .article-row img {
+  margin-top: 35px;
+}
+
+
+/** Blog Page: Posts **/
+
+.posts h2 {
+  font-family: 'Playfair Display', Georgia, Times, Times New Roman, serif;
+  letter-spacing: 2.0px;
+}
+
+.posts p {
+  font-size: 17px;
+}
+
+
+/** Post Page **/
+
+.post-mast {
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  height: 800px;
+}
+
+.post-details > p {
+  font-size: 17px;
+  color: #888;
+}
+
+.post-content {
+  padding-bottom: 25px;
+}
+
+.post-content p {
+  line-height: 1.58;
+  margin-top: 29px;
+  font-size: 21px;
+}
+
+
+/** FOOTER **/
+
+footer {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: #4C7D5C;
+}
+
+footer nav ul li:after {
+  color: #85d6a0;
+  content: '/';
+  margin: 0 15px;
+}
+
+footer nav ul.list-unstyled li a {
+  color: #85d6a0;
+}
+
+footer nav ul.list-unstyled li.current a {
+  color: #9cffbd;
+}
+
+@media screen and (max-width: 768px) {
+
+  .petals {
+    display: none;
+  }
+
+  .bio-content .desc {
+    width: 90%;
+    left: 5%;
+  }
+
+  .bio .picture {
+    text-align: center;
+  }
+
+  .bio .picture img {
+    width: 90%;
+  }
+
+}

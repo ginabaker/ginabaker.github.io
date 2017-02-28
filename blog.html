@@ -1,0 +1,129 @@
+--- 
+layout: blog
+title: 'Blog'
+paginate:
+  per_page: 5
+---
+
+<!-- About the Blog -->
+<section class="about">
+  <div class="container container-padding">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3 text-center">
+        <h2>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc rhoncus sit amet arcu eu auctor.
+        </h2>
+      </div>
+    </div>
+    <div class="row row-padding">
+      <div class="col-md-8 col-md-offset-2 text-center">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc rhoncus sit amet arcu eu auctor. Vivamus rhoncus quis
+          leo in egestas. Aenean sit amet sapien sed nulla pharetra luctus in quis elit. </p>
+        <p>Phasellus eget erat iaculis, ullamcorper justo et, dapibus velit. Donec varius diam id quam maximus, eu tincidunt
+          odio rutrum. Mauris et lacinia leo. Duis tempor ultrices pharetra.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Featured Article -->
+<section class="featured-article">
+  <div class="container">
+    <div class="vertical-center">
+      <p class="category underline text-center">Featured</p>
+      <h1 class="text-center">Helping the Animals</h1>
+      <h2 class="subtitle text-center">Farm Living</h2>
+
+      <div class="call-to-action text-center">
+        <a href="/blog/helping-the-animals" class="btn btn-primary">
+          Read Article
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Articles -->
+<section class="posts">
+  <div class="container container-padding">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <h2>
+          More Articles
+        </h2>
+      </div>
+    </div>
+    <div class="row row-padding">
+      <div class="col-md-8 col-md-offset-2 text-center">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris fringilla dolor eu sagittis vestibulum. Mauris justo
+          nibh, eleifend et fringilla id, molestie sed neque.</p>
+      </div>
+    </div>
+
+    <!-- Articles -->
+    {% for post in paginator.posts %}
+    {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
+    {% if thecycle == 'odd' %}
+      <div class="row article-row">
+        <div class="col-md-3 col-md-offset-2">
+          <a href="{{ post.url }}"><img src="{{site.baseurl}}{{post.featured-image}}" class="img-responsive" /></a>
+        </div>
+
+        <div class="col-md-6">
+          <article>
+            <time class="date">{{ post.date | date: "%B %-d, %Y" }}</time>
+            <br />
+            <a href="{{ post.url }}"><span class="title">{{ post.title }}</span></a>
+            <div class="categories">
+              <a href="/archives#{{ post.categories }}" class="label label-default">{{ post.categories }}</a>
+            </div>
+            <p>
+              {{ post.excerpt | strip_html | truncatewords: 40 }}
+            </p>
+          </article>
+        </div>
+      </div>
+      {% else %}
+      <div class="row article-row">
+        <div class="col-md-6 col-md-offset-2 text-right">
+          <article>
+            <time class="date">{{ post.date | date: "%B %-d, %Y" }}</time>
+            <br />
+            <a href="{{ post.url }}"><span class="title">{{ post.title }}</span></a>
+            <div class="categories">
+              <a href="/archives#{{ post.categories }}" class="label label-default">{{ post.categories }}</a>
+            </div>
+            <p>
+              {{ post.excerpt | strip_html | truncatewords: 40 }}
+            </p>
+          </article>
+        </div>
+
+        <div class="col-md-3">
+          <a href="{{ post.url }}"><img src="{{site.baseurl}}{{ post.featured-image }}" class="img-responsive" /></a>
+        </div>
+        
+      </div>
+      {% endif %}
+    {% endfor %}
+
+    <!-- Pagination -->
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <div class="pagination">
+          {% if paginator.previous_page %}
+            <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
+          {% else %}
+            <span class="previous">Previous</span>
+          {% endif %}
+          <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+          {% if paginator.next_page %}
+            <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+          {% else %}
+            <span class="next ">Next</span>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

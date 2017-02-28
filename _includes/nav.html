@@ -1,0 +1,13 @@
+<nav>
+  <ul class="list-unstyled list-inline">
+    <li {% if page.url == '/' %} class="current" {% endif %}>
+      <a href="{{site.baseurl}}/">Home</a>
+    </li>
+    <li {% if page.url == '/blog/' %} class="current" {% else %} class="blog-li" {% endif %}>
+      <a href="{{site.baseurl}}/blog/">Blog</a>
+    </li>
+    <li {% if page.url == '/archives/' %} class="current" {% endif %}>
+      <a href="{{site.baseurl}}/archives">Archives</a>
+    </li>
+  </ul>
+</nav>
