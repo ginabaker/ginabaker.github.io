@@ -1,2 +1,1 @@
-gem 'gh-pages'
-gem 'jekyll-paginate'
+gem 'jekyll-paginate', group: :jekyll_plugins
