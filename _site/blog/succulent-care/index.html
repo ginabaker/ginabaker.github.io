@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Succulent Care</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700|Playfair+Display" rel="stylesheet">
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body>
+
+  
+
+  <main>
+    <header class="post-mast" style="background-image: url('/images/blog/succulents.jpg')">
+  <div class="container blog-nav nav-padding-top">
+    <div class="pull-right">
+      <nav>
+  <ul class="list-unstyled list-inline">
+    <li >
+      <a href="/">Home</a>
+    </li>
+    <li  class="blog-li" >
+      <a href="/blog/">Blog</a>
+    </li>
+    <li >
+      <a href="/archives">Archives</a>
+    </li>
+  </ul>
+</nav>
+    </div>
+  </div>
+  <div class="container">
+    <div class="vertical-center">
+      <p class="category underline text-center">Nature</p>
+
+      <h1>Succulent Care</h1>
+      <h2 class="subtitle text-center">Tips on Maintaining Succulent Health</h2>
+
+      <div class="call-to-action text-center">
+        <a href="/blog/" class="btn btn-primary">
+          Back To Blog
+        </a>
+      </div>
+
+    </div>  
+  </div>
+</header>
+
+<article class="container">
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2 post-details">
+      <p>
+        Gina Baker <br />
+        on <time>February 10, 2017</time>
+      </p>
+    </div>
+    <div class="col-md-8 col-md-offset-2 post-content">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent elit urna, pharetra quis efficitur eget, venenatis eu neque. Cras eu maximus nisi. Mauris dapibus vestibulum augue. Nulla molestie tempor felis, sit amet tincidunt ex iaculis sit amet. Nullam non justo nunc. Vestibulum sagittis purus eu vehicula facilisis. Praesent vehicula quam et facilisis pellentesque. Pellentesque auctor mi dictum quam accumsan, eget imperdiet nisi hendrerit. Proin venenatis massa ac euismod congue. Fusce egestas pharetra tellus ac commodo. Vivamus nibh diam, suscipit nec malesuada vel, posuere nec ante. Duis quis fringilla tellus. Sed lacus nulla, faucibus vitae faucibus ac, luctus sollicitudin nunc.</p>
+
+<p>Maecenas eget dolor enim. Suspendisse aliquam, velit a consequat maximus, erat tellus iaculis nibh, et efficitur eros urna eu neque. Aenean nisl odio, tincidunt ac semper non, imperdiet ut elit. Praesent ultricies faucibus felis. Quisque ac imperdiet nibh. Sed ornare, ex ut vulputate lacinia, orci enim interdum sem, eu consequat velit nunc molestie ante. Vivamus metus augue, ornare eu porttitor a, eleifend nec dolor.</p>
+
+<p>Vestibulum condimentum, augue id vehicula dapibus, tellus eros pellentesque dui, at pulvinar dolor enim at sem. Mauris euismod est non bibendum mollis. Morbi vehicula, augue ac posuere congue, enim metus egestas neque, vitae ullamcorper ipsum nisi non eros. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam vehicula, lorem elementum vestibulum ullamcorper, lectus dui congue nunc, sed molestie velit libero non enim. Praesent ultrices efficitur dolor, in elementum eros pharetra volutpat. Sed luctus tempus fermentum. Praesent eu augue lacus.</p>
+
+<p>Curabitur aliquet mi dictum, mattis lorem eu, iaculis magna. Praesent congue mi a dui tristique, eget congue magna sollicitudin. Donec pharetra lorem non metus accumsan, in hendrerit orci semper. Curabitur ut ligula vel ipsum auctor maximus. Praesent eget sodales lacus. Suspendisse potenti. Sed nec volutpat ipsum, id volutpat nisl. Phasellus diam ante, fringilla nec elit venenatis, dignissim gravida sapien. Nunc volutpat rhoncus leo ut porta. In hac habitasse platea dictumst. Pellentesque at pellentesque leo. Aliquam blandit porta arcu a rhoncus. Suspendisse sed convallis erat.</p>
+
+<p>Maecenas vel lectus vehicula, vestibulum sapien eu, auctor nisl. Nunc dapibus sollicitudin justo, vitae aliquam est semper non. Aliquam interdum arcu at scelerisque pharetra. Vestibulum egestas dolor id ultricies pharetra. Quisque dapibus blandit nunc, a dignissim ligula faucibus vitae. Vivamus consectetur lorem quis tristique viverra. Aenean auctor diam non eros lacinia, ut efficitur mi facilisis. Quisque mollis erat at nunc laoreet, ut dapibus diam iaculis. Quisque viverra ligula id risus lacinia, ut finibus justo rutrum. Quisque lorem lectus, porta volutpat ligula id, iaculis semper turpis. Donec id ex non orci pretium porttitor non in mauris.</p>
+
+    </div>
+  </div>
+</article>
+
+<!-- Next/Prev Post Goes here -->
+
+<script>
+// Replicate jQuery's $(document).ready
+function ready(fn) {
+  if (document.readyState != 'loading'){
+    fn();
+  } else {
+    document.addEventListener('DOMContentLoaded', fn);
+  }
+}
+
+// When DOM is Ready
+ready(function() {
+  // Add Class of "current" to our "Blog" <li> in the navigation
+  const current = document.getElementsByClassName('blog-li');
+
+  // Since we have two (Header/Footer), 
+  // make sure to iterate to get each
+  for(let i = 0; i < current.length; i++) {
+    current[i].classList += " current";
+  }
+});
+</script>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <nav>
+  <ul class="list-unstyled list-inline">
+    <li >
+      <a href="/">Home</a>
+    </li>
+    <li  class="blog-li" >
+      <a href="/blog/">Blog</a>
+    </li>
+    <li >
+      <a href="/archives">Archives</a>
+    </li>
+  </ul>
+</nav>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  
+</body>
+</html>
