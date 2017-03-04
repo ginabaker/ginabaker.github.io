@@ -480,6 +480,11 @@ footer nav ul.list-unstyled li.current a {
     display: none;
   }
 
+  .bio {
+    padding-top: 0;
+    padding-bottom: 100px;
+  }
+
   .bio-content .desc {
     width: 90%;
     left: 5%;
@@ -508,7 +513,7 @@ footer nav ul.list-unstyled li.current a {
 }
 
 @media screen and (max-width: 590px) {
-  .bio .picture  img {
+  .bio .picture img {
     margin-top: 210px;
   }
 }
