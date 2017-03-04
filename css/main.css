@@ -508,8 +508,8 @@ footer nav ul.list-unstyled li.current a {
 }
 
 @media screen and (max-width: 590px) {
-  .bio .picture {
-    margin-top: 110px;
+  .bio .picture  img {
+    margin-top: 210px;
   }
 }
 
