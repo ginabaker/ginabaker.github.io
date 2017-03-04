@@ -8,6 +8,7 @@
   <title>Archives</title>
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700|Playfair+Display" rel="stylesheet">
   <link rel="stylesheet" href="/css/main.css">
 </head>
@@ -37,12 +38,12 @@
   </div>
   <div class="container">
     <div class="vertical-center">
-      <p class="category underline text-center">Science</p>
+      <p class="category underline text-center" data-aos="fade-up" data-aos-offset="0">Science</p>
 
-      <h1>Mother Earth</h1>
-      <h2 class="subtitle text-center">How a Plant Based Diet Can Help</h2>
+      <h1 data-aos="fade-up">Mother Earth</h1>
+      <h2 class="subtitle text-center" data-aos="fade-up" data-aos-offset="0">How a Plant Based Diet Can Help</h2>
 
-      <div class="call-to-action text-center">
+      <div class="call-to-action text-center" data-aos="fade-up" data-aos-offset="0">
         <a href="/blog/mother-earth" class="btn btn-primary">
           Read Article
         </a>
@@ -54,15 +55,15 @@
 <div class="container container-padding">
   <div class="row">
     <div class="col-md-6 col-md-offset-2">
-      <h2 class="underline">Archives</h2>
+      <h2 class="underline" data-aos="fade-up">Archives</h2>
     </div>
   </div>
   <div class="row">
     <div class="col-md-6 col-md-offset-2">
       
-      <h3 id="Nature">Nature</h3>
+      <h3 id="Nature" data-aos="fade-up">Nature</h3>
 
-      <ul>
+      <ul data-aos="fade-up">
               
         <li>
           <a href="/blog/succulent-care/">
@@ -80,9 +81,9 @@
           
       </ul>
       
-      <h3 id="Science">Science</h3>
+      <h3 id="Science" data-aos="fade-up">Science</h3>
 
-      <ul>
+      <ul data-aos="fade-up">
               
         <li>
           <a href="/blog/mother-earth/">
@@ -93,9 +94,9 @@
           
       </ul>
       
-      <h3 id="Animals">Animals</h3>
+      <h3 id="Animals" data-aos="fade-up">Animals</h3>
 
-      <ul>
+      <ul data-aos="fade-up">
               
         <li>
           <a href="/blog/mistreatment-of-animals/">
@@ -106,9 +107,9 @@
           
       </ul>
       
-      <h3 id="Nutrition">Nutrition</h3>
+      <h3 id="Nutrition" data-aos="fade-up">Nutrition</h3>
 
-      <ul>
+      <ul data-aos="fade-up">
               
         <li>
           <a href="/blog/daily-dozen/">
@@ -119,9 +120,9 @@
           
       </ul>
       
-      <h3 id="Featured">Featured</h3>
+      <h3 id="Featured" data-aos="fade-up">Featured</h3>
 
-      <ul>
+      <ul data-aos="fade-up">
               
         <li>
           <a href="/blog/helping-the-animals/">
@@ -159,6 +160,14 @@
     </div>
   </footer>
 
+  <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+      delay: 100,
+      duration: 900
+    });
+  </script>
   
 </body>
 </html>

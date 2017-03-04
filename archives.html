@@ -6,15 +6,15 @@ title: 'Archives'
 <div class="container container-padding">
   <div class="row">
     <div class="col-md-6 col-md-offset-2">
-      <h2 class="underline">Archives</h2>
+      <h2 class="underline" data-aos="fade-up">Archives</h2>
     </div>
   </div>
   <div class="row">
     <div class="col-md-6 col-md-offset-2">
       {% for category in site.categories %}
-      <h3 id="{{ category | first }}">{{ category | first }}</h3>
+      <h3 id="{{ category | first }}" data-aos="fade-up">{{ category | first }}</h3>
 
-      <ul>
+      <ul data-aos="fade-up">
         {% for posts in category %} {% for post in posts %} {% if post.url %}
         <li>
           <a href="{{ post.url }}">

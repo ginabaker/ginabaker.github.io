@@ -8,13 +8,13 @@ title: 'Blog'
   <div class="container container-padding">
     <div class="row">
       <div class="col-md-6 col-md-offset-3 text-center">
-        <h2>
+        <h2 data-aos="fade-up">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc rhoncus sit amet arcu eu auctor.
         </h2>
       </div>
     </div>
     <div class="row row-padding">
-      <div class="col-md-8 col-md-offset-2 text-center">
+      <div class="col-md-8 col-md-offset-2 text-center" data-aos="fade-up">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc rhoncus sit amet arcu eu auctor. Vivamus rhoncus quis
           leo in egestas. Aenean sit amet sapien sed nulla pharetra luctus in quis elit. </p>
         <p>Phasellus eget erat iaculis, ullamcorper justo et, dapibus velit. Donec varius diam id quam maximus, eu tincidunt
@@ -46,13 +46,13 @@ title: 'Blog'
   <div class="container container-padding">
     <div class="row">
       <div class="col-md-12 text-center">
-        <h2>
+        <h2 data-aos="fade-up">
           More Articles
         </h2>
       </div>
     </div>
     <div class="row row-padding">
-      <div class="col-md-8 col-md-offset-2 text-center">
+      <div class="col-md-8 col-md-offset-2 text-center" data-aos="fade-up">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris fringilla dolor eu sagittis vestibulum. Mauris justo
           nibh, eleifend et fringilla id, molestie sed neque.</p>
       </div>
@@ -60,7 +60,7 @@ title: 'Blog'
 
     <!-- Articles -->
     {% for post in paginator.posts %}
-      <div class="row article-row">
+      <div class="row article-row" data-aos="fade-up">
         <div class="col-md-3 col-md-offset-2">
           <a href="{{ post.url }}"><img src="{{site.github.url}}{{post.featured-image}}" class="img-responsive" /></a>
         </div>
@@ -82,7 +82,7 @@ title: 'Blog'
     {% endfor %}
 
     <!-- Pagination -->
-    <div class="row">
+    <div class="row" data-aos="fade-up">
       <div class="col-md-12 text-center">
         <div class="pagination">
           {% if paginator.previous_page %}

@@ -6,7 +6,7 @@ title: 'Home'
 <header class="mast">
   <div class="container flower-container text-center">
     <header>
-      <h1 class="rellax" data-rellax-speed="2">
+      <h1 class="rellax" data-rellax-speed="2" data-aos="fade-up">
         A <span class="green">plant</span> <br /> based lifestyle
       </h1>
     </header>
@@ -59,19 +59,19 @@ title: 'Home'
 
 <section class="articles">
   <div class="container">
-    <div class="row">
+    <div class="row" data-aos="fade-up">
       <div class="col-md-6 col-md-offset-1">
         <h2 class="underline">Recent Articles</h2>
 
         {% for post in site.posts limit: 4 %}
-        <article>
+        <article data-aos="fade-up">
           <time class="date">{{ post.date | date: "%B %-d, %Y" }}</time> <br />
           <a href="{{ post.permalink }}"><span class="title">{{ post.title }}</span></a>
         </article>
         {% endfor %}
       </div>
     </div>
-    <div class="row">
+    <div class="row" data-aos="fade-up">
       <div class="col-md-8 col-md-offset-1">
         <a href="{{site.github.urll}}/blog/" class="btn btn-primary btn-green">
           Go To Blog

@@ -8,6 +8,7 @@
   <title>Blog</title>
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700|Playfair+Display" rel="stylesheet">
   <link rel="stylesheet" href="/css/main.css">
 </head>
@@ -37,12 +38,12 @@
   </div>
   <div class="container">
     <div class="vertical-center">
-      <p class="category underline text-center">Science</p>
+      <p class="category underline text-center" data-aos="fade-up" data-aos-offset="0">Science</p>
 
-      <h1>Mother Earth</h1>
-      <h2 class="subtitle text-center">How a Plant Based Diet Can Help</h2>
+      <h1 data-aos="fade-up">Mother Earth</h1>
+      <h2 class="subtitle text-center" data-aos="fade-up" data-aos-offset="0">How a Plant Based Diet Can Help</h2>
 
-      <div class="call-to-action text-center">
+      <div class="call-to-action text-center" data-aos="fade-up" data-aos-offset="0">
         <a href="/blog/mother-earth" class="btn btn-primary">
           Read Article
         </a>
@@ -56,13 +57,13 @@
   <div class="container container-padding">
     <div class="row">
       <div class="col-md-6 col-md-offset-3 text-center">
-        <h2>
+        <h2 data-aos="fade-up">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc rhoncus sit amet arcu eu auctor.
         </h2>
       </div>
     </div>
     <div class="row row-padding">
-      <div class="col-md-8 col-md-offset-2 text-center">
+      <div class="col-md-8 col-md-offset-2 text-center" data-aos="fade-up">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc rhoncus sit amet arcu eu auctor. Vivamus rhoncus quis
           leo in egestas. Aenean sit amet sapien sed nulla pharetra luctus in quis elit. </p>
         <p>Phasellus eget erat iaculis, ullamcorper justo et, dapibus velit. Donec varius diam id quam maximus, eu tincidunt
@@ -94,13 +95,13 @@
   <div class="container container-padding">
     <div class="row">
       <div class="col-md-12 text-center">
-        <h2>
+        <h2 data-aos="fade-up">
           More Articles
         </h2>
       </div>
     </div>
     <div class="row row-padding">
-      <div class="col-md-8 col-md-offset-2 text-center">
+      <div class="col-md-8 col-md-offset-2 text-center" data-aos="fade-up">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris fringilla dolor eu sagittis vestibulum. Mauris justo
           nibh, eleifend et fringilla id, molestie sed neque.</p>
       </div>
@@ -108,7 +109,7 @@
 
     <!-- Articles -->
     
-      <div class="row article-row">
+      <div class="row article-row" data-aos="fade-up">
         <div class="col-md-3 col-md-offset-2">
           <a href="/blog/greenhouse-gas/"><img src="/images/blog/mossy.jpg" class="img-responsive" /></a>
         </div>
@@ -130,7 +131,7 @@
     
 
     <!-- Pagination -->
-    <div class="row">
+    <div class="row" data-aos="fade-up">
       <div class="col-md-12 text-center">
         <div class="pagination">
           
@@ -169,6 +170,14 @@
     </div>
   </footer>
 
+  <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+      delay: 100,
+      duration: 900
+    });
+  </script>
   
 </body>
 </html>

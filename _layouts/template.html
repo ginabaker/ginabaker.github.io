@@ -8,16 +8,17 @@
   <title>{{ page.title }}</title>
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700|Playfair+Display" rel="stylesheet">
   <link rel="stylesheet" href="{{site.baseurl}}/css/main.css">
 </head>
 
 <body>
 
-  {% if page.url == '/' %}
+  {% if page.url == '/' or page.url == '/404.html' %}
   <header>
     <div class="container blog-nav nav-padding-top">
-      <div class="pull-right">
+      <div class="nav-top">
         {% include nav.html %}
       </div>
     </div>
@@ -38,9 +39,24 @@
     </div>
   </footer>
 
+  <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+      delay: 100,
+      duration: 900
+    });
+  </script>
   {% if page.url == '/' %}
   <script src="rellax.js"></script>
   <script>
+    // Parallax Effect
+    var rellax = new Rellax('.rellax');
+  </script>
+  {% elsif page.url == '/404.html' %}
+  <script src="../rellax.js"></script>
+  <script>
+    // Parallax Effect
     var rellax = new Rellax('.rellax');
   </script>
   {% endif %}
